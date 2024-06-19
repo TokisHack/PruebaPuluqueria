@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Santos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Peluquería Santos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Transforma tu estilo con nosotros</h2>
+            <p>Descubre los mejores cortes y estilos modernos en nuestra peluquería.</p>
+            <a href="#services" class="btn">Ver Servicios</a>
+        </div>
+    </section>
+
+    <section id="carousel" class="carousel">
+        <h2>Promociones y Destacados</h2>
+        <div class="carousel-slides">
+            <div class="slide">
+                <img src="img/Cabecera-1.jpeg" alt="Promoción 1">
+            </div>
+            <div class="slide">
+                <img src="img/pelu.jpg" alt="Promoción 2">
+            </div>
+            <div class="slide">
+                <img src="img/queria.jpg" alt="Promoción 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-container">
+            <div class="service-card" onclick="showServiceInfo('Corte Clásico')">
+                <img src="img/Cabecera-1.jpeg" alt="Corte Clásico">
+                <h3>Corte Clásico</h3>
+            </div>
+            <div class="service-card" onclick="showServiceInfo('Corte Moderno')">
+                <img src="img/pelu.jpg" alt="Corte Moderno">
+                <h3>Corte Moderno</h3>
+            </div>
+            <div class="service-card" onclick="showServiceInfo('Corte Creativo')">
+                <img src="img/queria.jpg" alt="Corte Creativo">
+                <h3>Corte Creativo</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-container">
+            <img src="img/pelu.jpg" alt="Galería Imagen 1">
+            <img src="img/Cabecera-1.jpeg" alt="Galería Imagen 2">
+            <img src="img/queria.jpg" alt="Galería Imagen 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Calle principal el jocotillo frente a la venta de repuestos 22R</p>
+        <a href="https://wa.me/56191774" target="_blank" class="whatsapp-link">Contactar por WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Peluquería Moderna. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="service-info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <p id="service-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
